@@ -1,0 +1,27 @@
+img{
+    width: 200px;
+}
+body{
+    background: #FEC356;
+    margin: 10px;
+}
+h1{
+    background: #FFC500;
+    color: black;
+}
+h2{
+    background: #107DC1;
+    color: gray;
+}
+p{
+    background: #F24F29;
+    color: black;
+}
+ul{
+    background: deepskyblue;
+    color: white;
+}
+li{
+    background: yellow;
+    color: #F24F29;
+}

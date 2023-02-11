@@ -1,0 +1,46 @@
+body{display: flex;
+    height: 100vh;
+    width: 100%;
+    margin: 1%;
+    }
+
+.body{
+    width: 100%;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2%;
+}
+
+.Widgets{flex-grow: 1;
+    display: flex;
+background: #107DC1;
+align-items: center;
+justify-content: center;
+    color: white;}
+
+.Contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+    background: #107DC1;
+    color: white;}
+
+.between{
+    width: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1%;
+}
+
+.widgets_blocks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background: gray;
+    color: white;
+}

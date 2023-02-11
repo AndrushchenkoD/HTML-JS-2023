@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task2</title>
+</head>
+<body>
+
+<script>
+
+    // Масиви та об'єкти:
+    // - Створити масив, наповнити його 10 елементами будь-якого типу, вивести кожен елемент в консоль
+
+    // let matrix1 = [1,2,3,4,5,6,7,8,9,10];
+    // console.log(matrix1[0]);
+    // console.log(matrix1[1]);
+    // console.log(matrix1[2]);
+    // console.log(matrix1[3]);
+    // console.log(matrix1[4]);
+    // console.log(matrix1[5]);
+    // console.log(matrix1[6]);
+    // console.log(matrix1[7]);
+    // console.log(matrix1[8]);
+    // console.log(matrix1[9]);
+
+    // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre.
+
+    // let book1={title: 'vasisdaas',pageCount: 320,genre:'action film'};
+    // let book2={title: 'isdaas',pageCount: 230,genre:'melodrama'};
+    // let book3={title: 'vasis',pageCount: 302,genre:'thriller'};
+
+
+    // - Створити 3 об'єкти які описують книги. Поля об'єкту : title ,pageCount, genre, authors. Поле "автори" - являється  масивом. Кожен автор має поля name та age.
+
+    // let book1={title: 'vasisdaas',pageCount: 320,genre:'action film',authors: [
+    //         {name: 'willyam stetkhem', age: 29},
+    //         {name: 'paul valker', age: 31},
+    //     ]};
+    // let book2={title: 'isdaas',pageCount: 230,genre:'melodrama',authors: [
+    //         {name: 'brayan cilliyan', age: 34}
+    //     ]};
+    // let book3={title: 'vasis',pageCount: 302,genre:'thriller',authors:[
+    //         {name: 'sherlock holmes', age: 38}
+    //     ]};
+
+    // - Створити масив з 10 об'єктами які описують сутніть "користувач". Поля: name, username,password. Вивести в консоль пароль кожного користувача
+
+    // let Users=[
+    //     {name:'dima',username:'dementor',password:'12122121'},
+    //     {name:'Max',username:'maxik',password:'maxpig'},
+    //     {name:'Olya',username:'olichka',password:'Olya2002'},
+    //     {name:'Yura',username:'Lance',password:'2102003'},
+    //     {name:'Oleh',username:'Whiscatsu',password:'pinGuin'},
+    //     {name:'Oleksiy',username:'Alex777',password:'Alex_777'},
+    //     {name:'Vitaliy',username:'Dirt',password:'Polskego'},
+    //     {name:'Maryan',username:'Marek',password:'vikasyka'},
+    //     {name:'Denys',username:'Rediska',password:'Googlepiksel'},
+    //     {name:'Max',username:'Paylo',password:'1941Angela'}
+    // ];
+    // console.log(Users[0],Users[1],Users[2],Users[3],Users[4],Users[5],Users[6],Users[7],Users[8],Users[9],);
+
+    // Логічні розгалуження:
+    //     - Є змінна х, якій ви надаєте довільне числове значення.
+    //     Якщо змінна x не дорівнює нулю, виведіть 'Вірно', інакше виведіть 'Невірно'. Перевірте  скрипт при a, що дорівнює 1, 0, -3
+
+    // let x =-3;
+    // if (x!==0){
+    //     console.log('true');}
+    // else {
+    //     console.log('false')}
+
+    // - Дано змінну time яка рівна числу від 0 до 59. Потрібно написати код, який перевірить, до якої четверті години попадає число
+    // (в першу, другу, третю или четверту частину години).
+
+    // let time = 46;
+    // if (time <=15&&time >=0){ console.log('first quarter');}
+    //
+    // else if (time >15 && time<=30){console.log('second quarter');}
+    //
+    // else if (time >30 && time<=45){ console.log('third quarter');}
+    //
+    // else if (time >45&&time<=59){console.log('fourth quarter');}
+    //
+    // else {console.log('enter minutes from 0 to 59!!!');}
+
+    // - У змінній day дано якесь число від 1 до 31. Потрібно визначити, у яку половину(декаду) місяця потрапляє це число (у першу, другу чи третю).
+
+    // let day = prompt('Введіть день місяця щоб взнати декаду!');
+    // if (day>=1 && day<=10){
+    //     console.log('перша декада');
+    // }else if (day>10 &&day<=20){
+    //     console.log('Друга декада');
+    // }else if (day>20&&day<31){
+    //     console.log('Третя декада');
+    // }else {
+    //     console.log('Введи число від 1 до 31!!!!!!!!')};
+
+    // - Скласти розклад на тиждень за домопоги switch. Користувач вводить порядковий номер дня тижня і на екрані відображається інфа що заплановано на цей день (можна замість плану на день, назву дня англійською).
+
+    // let day = prompt('Enter number of the day');
+    // switch (day){
+    //     case'1':{
+    //         document.write(`<div>Monday</div>`);
+    //         break;
+    //     } case'2':{
+    //         document.write(`<div>Tuesday</div>`);
+    //         break;
+    //     } case'3':{
+    //         document.write(`<div>Wednesday</div>`);
+    //         break;
+    //     } case'4':{
+    //         document.write(`<div>Thursday</div>`);
+    //         break;
+    //     } case'5':{
+    //         document.write(`<div>Friday</div>`);
+    //         break;
+    //     } case'6':{
+    //         document.write(`<div>Saturday</div>`);
+    //         break;
+    //     } case'7':{
+    //         document.write(`<div>Sunday</div>`);
+    //         break;
+    //     }
+    //     default:
+    //     {
+    //         document.write(`<div> You enter wrong weekday number </div>`)}
+    // }
+
+    //     - Користувач вводить або має два числа.
+    //         Потрібно знайти та вивести максимальне число з тих двох .
+    //         Також потрібно врахувати коли введені рівні числа.
+
+    // let x = prompt('Enter first number');
+    // let y = prompt('Enter second number');
+    //
+    // if (x>y){
+    //     document.write(`<div>First number is bigger ${x}</div>`)
+    // }else if (y>x){
+    //     document.write(`<div>Second number is bigger ${y}</div>`)
+    // }else if (x=y){
+    //     document.write(`<div>Numbers is equal ${y} = ${x}</div>`)
+    // }
+</script>
+
+</body>
+</html>
