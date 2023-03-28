@@ -1,0 +1,36 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.UsersWrap{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px black solid ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: silver;
+}
+.button{
+margin-top: 50px;
+    width: 90%;
+}
+.PostWrapper{
+width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+margin-top: 40px;
+
+}
+.PostWrap{
+    margin: 5px;
+    background: silver;
+    border: #312222 1px solid;
+    border-radius: 5px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
