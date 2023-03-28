@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<link rel="stylesheet" href="post-details-style.css">
+<div id='PostDetails' class="PostDetails"></div>
+<div id="Comments" class="Comments"></div>
+
+<script>
+    const params = new Proxy(new URLSearchParams(window.location.search), {
+        get: (searchParams, prop) => searchParams.get(prop),
+    });
+    let id=params.post_id;
+    console.log(id);
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}`).then(
+        value => value.json()
+            .then(obj=>{
+                function logObject(obj) {
+                    let PostDetails=document.getElementById('PostDetails');
+                    for (let key in obj) {
+                        let divD=document.createElement('div');
+                        if (typeof obj[key] === "object") {
+                            logObject(obj[key]);
+                        } else {
+                            const span = document.createElement("span");
+                            span.innerText=`${key}:${obj[key]}`;
+                            divD.append(span);
+                        }
+                        PostDetails.append(divD);
+
+                    }
+
+                }
+                logObject(obj);
+            })
+    )
+
+    fetch(`https://jsonplaceholder.typicode.com/posts/${id}/comments`).then(
+        value => value.json()).then(
+    comments => {
+        let Commentsdiv=document.getElementById('Comments')
+        for (const comment of comments) {
+
+            function logcomment(comment){
+                let commentdiv=document.createElement('div');
+                Commentsdiv.append(commentdiv);
+                commentdiv.classList.add('divD');
+                for (let key in comment) {
+                    let divD=document.createElement('div');
+
+                    if (typeof comment[key] === "object") {
+                        logcomment(comment[key]);
+                    } else {
+                        const span = document.createElement("span");
+                        span.innerText=`${key}:${comment[key]}`;
+                        divD.append(span);
+                    }
+                    commentdiv.append(divD);
+
+                }
+            }
+            logcomment(comment);
+        }
+    })
+</script>
+</body>
+</html>
